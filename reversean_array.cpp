@@ -3,12 +3,23 @@ using namespace std;
 int main(){
     int arr[]={2,4,0,1,9,6,5,3,7,8};
     int n=sizeof(arr)/sizeof(int);
-    int revArr[100];
-    for(int i=0;i<n;i++){
-        revArr[i]=arr[n-1-i];
+    // int revArr[100];
+    // for(int i=0;i<n;i++){
+    //     revArr[i]=arr[n-1-i];
 
+    // }
+    // for(int i=0;i<n;i++){
+    //     cout<<revArr[i]<<" ";
+    // }
+
+    // Swapping method
+    int start=0,end=n-1;
+    while(start<=end){
+        swap(arr[start],arr[end]);
+        start++;
+        end--;
     }
-    for(int i=0;i<n;i++){
-        cout<<revArr[i]<<" ";
-    }
-}
+    for (int i=0;i<n;i++){
+        cout<<arr[i]<<" ";
+        
+    }}
